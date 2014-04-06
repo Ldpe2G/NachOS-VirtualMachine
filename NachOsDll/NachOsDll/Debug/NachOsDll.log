@@ -1,0 +1,45 @@
+﻿生成启动时间为 2014/4/3 21:46:35。
+     1>项目“D:\VisualStudio 2010\AcmProjects\NachOsDll\NachOsDll\NachOsDll.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\NachOsDll.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D NACHOSDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt exception.cpp
+         正在跳过...(未检测到相关更改)
+         exception.cpp
+       Link:
+         D:\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VisualStudio 2010\AcmProjects\NachOsDll\Debug\NachOsDll.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\NachOsDll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\VisualStudio 2010\AcmProjects\NachOsDll\Debug\NachOsDll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VisualStudio 2010\AcmProjects\NachOsDll\Debug\NachOsDll.lib" /MACHINE:X86 /DLL Debug\addrspace.obj
+         Debug\alarm.obj
+         Debug\bitmap.obj
+         Debug\debug.obj
+         Debug\directory.obj
+         Debug\exception.obj
+         Debug\filehdr.obj
+         Debug\filesys.obj
+         Debug\hash.obj
+         Debug\kernel.obj
+         Debug\libtest.obj
+         Debug\list.obj
+         Debug\openfile.obj
+         Debug\pbitmap.obj
+         Debug\proctable.obj
+         Debug\scheduler.obj
+         Debug\synch.obj
+         Debug\synchbitmap.obj
+         Debug\synchconsole.obj
+         Debug\synchdisk.obj
+         Debug\synchlist.obj
+         Debug\sysdep.obj
+         Debug\table.obj
+         Debug\thread.obj
+         Debug\translate.obj
+         NachOsDll.vcxproj -> D:\VisualStudio 2010\AcmProjects\NachOsDll\Debug\NachOsDll.dll
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"D:\VisualStudio 2010\AcmProjects\NachOsDll\Debug\NachOsDll.dll.manifest" /manifest Debug\NachOsDll.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\NachOsDll.unsuccessfulbuild”。
+         正在对“Debug\NachOsDll.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\VisualStudio 2010\AcmProjects\NachOsDll\NachOsDll\NachOsDll.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.95

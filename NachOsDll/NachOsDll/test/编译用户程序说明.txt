@@ -1,0 +1,18 @@
+编译start.s:
+    执行批处理文件BldStart
+
+将源文件编译为汇编码:
+    执行带参数批处理文件BldAsm
+    如：BldAsm halt，将halt.c编译为halt.s
+
+将源文件编译为coff文件:
+    执行带参数批处理文件Bld
+    如：Bld halt，将halt.c编译为halt.coff
+
+将coff文件转换为noff文件:
+    执行带参数批处理文件Coff2Noff
+    如：Coff2Noff halt，将halt.coff转换为halt.noff
+
+将源文件直接编译为noff文件:
+    执行带参数批处理文件BldNoff
+    如：BldNoff halt，将halt.c编译为halt.noff

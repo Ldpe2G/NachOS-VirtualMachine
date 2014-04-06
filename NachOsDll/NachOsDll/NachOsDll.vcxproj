@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="addrspace.h" />
+    <ClInclude Include="alarm.h" />
+    <ClInclude Include="bitmap.h" />
+    <ClInclude Include="callback.h" />
+    <ClInclude Include="copyright.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="directory.h" />
+    <ClInclude Include="filehdr.h" />
+    <ClInclude Include="filesys.h" />
+    <ClInclude Include="hash.h" />
+    <ClInclude Include="kernel.h" />
+    <ClInclude Include="ksyscall.h" />
+    <ClInclude Include="libtest.h" />
+    <ClInclude Include="list.h" />
+    <ClInclude Include="noff.h" />
+    <ClInclude Include="openfile.h" />
+    <ClInclude Include="pbitmap.h" />
+    <ClInclude Include="proctable.h" />
+    <ClInclude Include="scheduler.h" />
+    <ClInclude Include="switch.h" />
+    <ClInclude Include="synch.h" />
+    <ClInclude Include="synchbitmap.h" />
+    <ClInclude Include="synchconsole.h" />
+    <ClInclude Include="synchdisk.h" />
+    <ClInclude Include="synchlist.h" />
+    <ClInclude Include="syscall.h" />
+    <ClInclude Include="sysdep.h" />
+    <ClInclude Include="table.h" />
+    <ClInclude Include="thread.h" />
+    <ClInclude Include="translate.h" />
+    <ClInclude Include="utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="addrspace.cpp" />
+    <ClCompile Include="alarm.cpp" />
+    <ClCompile Include="bitmap.cpp" />
+    <ClCompile Include="debug.cpp" />
+    <ClCompile Include="directory.cpp" />
+    <ClCompile Include="exception.cpp" />
+    <ClCompile Include="filehdr.cpp" />
+    <ClCompile Include="filesys.cpp" />
+    <ClCompile Include="hash.cpp" />
+    <ClCompile Include="kernel.cpp" />
+    <ClCompile Include="libtest.cpp" />
+    <ClCompile Include="list.cpp" />
+    <ClCompile Include="openfile.cpp" />
+    <ClCompile Include="pbitmap.cpp" />
+    <ClCompile Include="proctable.cpp" />
+    <ClCompile Include="scheduler.cpp" />
+    <ClCompile Include="synch.cpp" />
+    <ClCompile Include="synchbitmap.cpp" />
+    <ClCompile Include="synchconsole.cpp" />
+    <ClCompile Include="synchdisk.cpp" />
+    <ClCompile Include="synchlist.cpp" />
+    <ClCompile Include="sysdep.cpp" />
+    <ClCompile Include="table.cpp" />
+    <ClCompile Include="thread.cpp" />
+    <ClCompile Include="translate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{048AC824-D199-4D89-9BF6-9AA4B431E0EA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NachOsDll</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NACHOSDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NACHOSDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

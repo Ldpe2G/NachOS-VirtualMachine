@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Util">
+      <UniqueIdentifier>{22116f9c-820e-412d-80e1-7f5ff5be5783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Util">
+      <UniqueIdentifier>{857ce942-fe27-4cb5-ab20-e51495c7c385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Thread">
+      <UniqueIdentifier>{d99d460b-205a-40d8-94c1-6816c2d778b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Thread">
+      <UniqueIdentifier>{b3355ffe-246c-475c-86c5-85a52730998a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\UserProg">
+      <UniqueIdentifier>{104077be-b333-431c-a3fd-bd334a4c1335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\UserProg">
+      <UniqueIdentifier>{36d2a30f-3444-46cb-9d23-5c2c5de40742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\FileSys">
+      <UniqueIdentifier>{9e59a084-f1a5-43c7-bb95-c8734b614bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\FileSys">
+      <UniqueIdentifier>{066b365c-54e9-41a0-8759-331edc60f19a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utility.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="copyright.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="sysdep.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="callback.h">
+      <Filter>头文件\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="list.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="synch.h">
+      <Filter>头文件\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread.h">
+      <Filter>头文件\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="synchlist.h">
+      <Filter>头文件\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="addrspace.h">
+      <Filter>头文件\UserProg</Filter>
+    </ClInclude>
+    <ClInclude Include="table.h">
+      <Filter>头文件\UserProg</Filter>
+    </ClInclude>
+    <ClInclude Include="filesys.h">
+      <Filter>头文件\FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="openfile.h">
+      <Filter>头文件\FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="synchdisk.h">
+      <Filter>头文件\FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="filehdr.h">
+      <Filter>头文件\FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="pbitmap.h">
+      <Filter>头文件\FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="directory.h">
+      <Filter>头文件\FileSys</Filter>
+    </ClInclude>
+    <ClInclude Include="bitmap.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="hash.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="libtest.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="noff.h">
+      <Filter>头文件\UserProg</Filter>
+    </ClInclude>
+    <ClInclude Include="synchbitmap.h">
+      <Filter>头文件\UserProg</Filter>
+    </ClInclude>
+    <ClInclude Include="alarm.h">
+      <Filter>头文件\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="scheduler.h">
+      <Filter>头文件\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="switch.h">
+      <Filter>头文件\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel.h">
+      <Filter>头文件\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ksyscall.h">
+      <Filter>头文件\UserProg</Filter>
+    </ClInclude>
+    <ClInclude Include="proctable.h">
+      <Filter>头文件\UserProg</Filter>
+    </ClInclude>
+    <ClInclude Include="syscall.h">
+      <Filter>头文件\UserProg</Filter>
+    </ClInclude>
+    <ClInclude Include="synchconsole.h">
+      <Filter>头文件\UserProg</Filter>
+    </ClInclude>
+    <ClInclude Include="translate.h">
+      <Filter>头文件\Thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sysdep.cpp">
+      <Filter>源文件\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>源文件\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="list.cpp">
+      <Filter>源文件\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="synch.cpp">
+      <Filter>源文件\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread.cpp">
+      <Filter>源文件\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="synchlist.cpp">
+      <Filter>源文件\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="addrspace.cpp">
+      <Filter>源文件\UserProg</Filter>
+    </ClCompile>
+    <ClCompile Include="table.cpp">
+      <Filter>源文件\UserProg</Filter>
+    </ClCompile>
+    <ClCompile Include="filesys.cpp">
+      <Filter>源文件\FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="openfile.cpp">
+      <Filter>源文件\FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="synchdisk.cpp">
+      <Filter>源文件\FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="filehdr.cpp">
+      <Filter>源文件\FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="pbitmap.cpp">
+      <Filter>源文件\FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="directory.cpp">
+      <Filter>源文件\FileSys</Filter>
+    </ClCompile>
+    <ClCompile Include="bitmap.cpp">
+      <Filter>源文件\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="hash.cpp">
+      <Filter>源文件\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="libtest.cpp">
+      <Filter>源文件\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="synchbitmap.cpp">
+      <Filter>源文件\UserProg</Filter>
+    </ClCompile>
+    <ClCompile Include="alarm.cpp">
+      <Filter>源文件\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="scheduler.cpp">
+      <Filter>源文件\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel.cpp">
+      <Filter>源文件\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="exception.cpp">
+      <Filter>源文件\UserProg</Filter>
+    </ClCompile>
+    <ClCompile Include="proctable.cpp">
+      <Filter>源文件\UserProg</Filter>
+    </ClCompile>
+    <ClCompile Include="synchconsole.cpp">
+      <Filter>源文件\UserProg</Filter>
+    </ClCompile>
+    <ClCompile Include="translate.cpp">
+      <Filter>源文件\Thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

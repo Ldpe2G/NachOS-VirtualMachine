@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Machine">
+      <UniqueIdentifier>{7534ef3f-02c2-48e5-a745-b548c4a1c834}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Machine">
+      <UniqueIdentifier>{b6acfc6d-cbd5-4e2d-bb35-e8705c613835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Main">
+      <UniqueIdentifier>{62b755e1-4927-4853-9b33-3d421fba0a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Main">
+      <UniqueIdentifier>{4c6c111d-d06c-4c0a-a867-0349bd9ba3e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Network">
+      <UniqueIdentifier>{719cbc5c-76be-437a-8bdb-64e1626be7c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Network">
+      <UniqueIdentifier>{7a7f0da7-bd34-4ad7-8a87-da04bfa1a294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Util">
+      <UniqueIdentifier>{79189ec8-a7e3-4373-8b2e-ac52e72bebc4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="console.h">
+      <Filter>头文件\Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="disk.h">
+      <Filter>头文件\Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="interrupt.h">
+      <Filter>头文件\Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="mipssim.h">
+      <Filter>头文件\Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="machine.h">
+      <Filter>头文件\Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="network.h">
+      <Filter>头文件\Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="stats.h">
+      <Filter>头文件\Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>头文件\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="post.h">
+      <Filter>头文件\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="tut.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="tut_reporter.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="tut_restartable.h">
+      <Filter>头文件\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>头文件\Machine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="console.cpp">
+      <Filter>源文件\Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="disk.cpp">
+      <Filter>源文件\Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="interrupt.cpp">
+      <Filter>源文件\Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="machine.cpp">
+      <Filter>源文件\Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="mipssim.cpp">
+      <Filter>源文件\Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="network.cpp">
+      <Filter>源文件\Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="stats.cpp">
+      <Filter>源文件\Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="post.cpp">
+      <Filter>源文件\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>源文件\Machine</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
