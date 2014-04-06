@@ -5,7 +5,7 @@ This project is based on the nachos 4.1 which is transplanted to windows, and th
 
 including :
 
-1, the MIPS Virtual Machine part, under the MIPSVirtualMachine folder, a win32 console project. 
+1, the MIPS Virtual Machine part, under the MIPSVirtualMachine folder, a win32 console project.                                                 
 2, the Operating system part, under the NachOsDll folder, a dll project.
 
 
