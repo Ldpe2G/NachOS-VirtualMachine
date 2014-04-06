@@ -589,7 +589,7 @@ int main(int argc, char **argv)
 	/**** add 
 	 * Liang DePeng + */
 	//load the NachOs Dll, to simulate loading the operating system
-	hDLL = LoadLibrary(L"D:\\VisualStudio 2010\\AcmProjects\\NachOsDll\\Debug\\NachOsDll.dll");
+	hDLL = LoadLibrary(L"E:\\Github\\Custom--NachOS\\NachOsDll\\Debug\\NachOsDll.dll");
 
 	if(hDLL == NULL){
 		std::cout << "can't find the NachOs" <<std::endl<<"please provide the correct path of the NachOS DLL" << std::endl;
