@@ -3,7 +3,10 @@ Custom--NachOS
 
 This project is based on the nachos 4.1 which is transplanted to windows, and than split into two parts 
 
-including the MIPS Virtual Machine part and the Operating system part.
+including :
+
+1, the MIPS Virtual Machine part, under the MIPSVirtualMachine folder. 
+2, the Operating system part, under the NachOsDll folder.
 
 
 The operating system part is compiled into the windows dynamic load library 
