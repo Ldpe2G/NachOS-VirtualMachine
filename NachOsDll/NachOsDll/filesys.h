@@ -39,7 +39,10 @@
 #include "sysdep.h"
 #include "openfile.h"
 
-#ifdef FILESYS_STUB 		// Temporarily implement file system calls as 
+/**** delete
+ * Liang DePeng - */
+
+/*#ifdef FILESYS_STUB 		// Temporarily implement file system calls as 
 				// calls to UNIX, until the real file system
 				// implementation is available
 class FileSystem {
@@ -67,9 +70,7 @@ class FileSystem {
 
 #else // FILESYS
 
-/**** delete
- * Liang DePeng - */
-/*class FileSystem {
+class FileSystem {
   public:
     FileSystem(bool format);		// Initialize the file system.
 					// Must be called *after* "synchDisk" 
@@ -142,6 +143,6 @@ extern DeleteFileSystem deleteFileSystem;
 /* Liang DePeng +
  ****/
 
-#endif // FILESYS
+//#endif // FILESYS
 
 #endif // FS_H

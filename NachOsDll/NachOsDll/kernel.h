@@ -92,7 +92,7 @@ public:
 				// refers to "kernel" as a global
 	
 	//void ThreadSelfTest();	/* Liang DePeng - */
-    virtual void ThreadSelfTest() = 0;	/* Liang DePeng + */ // self test of threads and synchronization
+    virtual void ThreadSelfTest(int threadNum) = 0;	/* Liang DePeng + */ // self test of threads and synchronization
 
 	//void ConsoleTest();	/* Liang DePeng - */
     virtual void ConsoleTest() = 0;   /* Liang DePeng + */      // interactive console self test

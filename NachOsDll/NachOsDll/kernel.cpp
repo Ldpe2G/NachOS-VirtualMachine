@@ -79,7 +79,7 @@ public:
 				// from constructor because 
 				// refers to "kernel" as a global
 	
-    void ThreadSelfTest(); // self test of threads and synchronization
+    void ThreadSelfTest(int threadNum); // self test of threads and synchronization
 
 	void ConsoleTest() ;      // interactive console self test
 };
@@ -330,14 +330,14 @@ int fakeCompare (Item *x, Item *y){
 }
 
 //void Kernel::ThreadSelfTest() {	/* Liang DePeng - */
-void MyKernel::ThreadSelfTest() {	/* Liang DePeng + */
+void MyKernel::ThreadSelfTest(int threadNum) {	/* Liang DePeng + */
    FSemaphore *semaphore;
    //SynchList<int> *synchList;	/* Liang DePeng - */
    SynchList* synchList;		/* Liang DePeng + */
 
    LibSelfTest();		// test library routines
    
-   currentThread->SelfTest();	// test thread switching
+   currentThread->SelfTest(threadNum);	// test thread switching
    				// test semaphore operation
    //semaphore = new Semaphore("test", 0);		/* Liang DePeng - */
    semaphore = GetSemaphoreF("test", 0);		/* Liang DePeng + */

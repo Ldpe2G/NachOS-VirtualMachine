@@ -139,7 +139,7 @@ public:
     void setStatus(ThreadStatus st){ status = st; }
     char* getName(){ return (name); }
     void Print(){ std::cout << name; }
-    void SelfTest();		// test whether thread impl is working
+    void SelfTest(int threadNum);		// test whether thread impl is working
 public:
     void SaveUserState();			// save user-level register state
     void RestoreUserState();		// restore user-level register state
@@ -586,13 +586,17 @@ static void SimpleThread(int which)
 //	to call SimpleThread, and then calling SimpleThread ourselves.
 //----------------------------------------------------------------------
 
-void MyThread::SelfTest()
+void MyThread::SelfTest(int threadNum)
 {
     DEBUG(dbgThread, "Entering Thread::SelfTest");
 
-    Thread *t = GetThreadF("forked thread")	;//new Thread("forked thread");
+    //Thread *t = GetThreadF("forked thread")	;//new Thread("forked thread");
 
-    t->Fork((VoidFunctionPtr) SimpleThread, (void *) 1);
+	for(int i=0; i<threadNum; i++){
+		Thread* t  = GetThreadF("forked thread");
+		t->Fork((VoidFunctionPtr) SimpleThread, (void *) (i + 1));
+	}
+    //t->Fork((VoidFunctionPtr) SimpleThread, (void *) 1);
 
     kernel->currentThread->yield();
 

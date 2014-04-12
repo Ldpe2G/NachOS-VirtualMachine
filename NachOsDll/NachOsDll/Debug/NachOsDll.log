@@ -1,13 +1,92 @@
-﻿生成启动时间为 2014/4/3 21:46:35。
-     1>项目“D:\VisualStudio 2010\AcmProjects\NachOsDll\NachOsDll\NachOsDll.vcxproj”在节点 2 上(build 个目标)。
+﻿生成启动时间为 4/12/2014 3:29:27 PM。
+     1>项目“E:\Github\Custom--NachOS\NachOsDll\NachOsDll\NachOsDll.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\NachOsDll.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         D:\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D NACHOSDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt exception.cpp
-         正在跳过...(未检测到相关更改)
+         D:\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D NACHOSDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt addrspace.cpp exception.cpp filehdr.cpp filesys.cpp kernel.cpp openfile.cpp scheduler.cpp synch.cpp synchdisk.cpp thread.cpp
+         kernel.cpp
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(72): warning C4273: “atoi”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdlib.h(405) : 参见“atoi”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(73): warning C4273: “atof”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\math.h(130) : 参见“atof”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(114): warning C4150: 删除指向不完整“FileHeader”类型的指针；没有调用析构函数
+                 e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(31) : 参见“FileHeader”的声明
+         正在生成代码...
+         正在编译...
+         thread.cpp
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(72): warning C4273: “atoi”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdlib.h(405) : 参见“atoi”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(73): warning C4273: “atof”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\math.h(130) : 参见“atof”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(114): warning C4150: 删除指向不完整“FileHeader”类型的指针；没有调用析构函数
+                 e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(31) : 参见“FileHeader”的声明
+         synchdisk.cpp
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(72): warning C4273: “atoi”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdlib.h(405) : 参见“atoi”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(73): warning C4273: “atof”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\math.h(130) : 参见“atof”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(114): warning C4150: 删除指向不完整“FileHeader”类型的指针；没有调用析构函数
+                 e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(31) : 参见“FileHeader”的声明
+         synch.cpp
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(72): warning C4273: “atoi”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdlib.h(405) : 参见“atoi”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(73): warning C4273: “atof”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\math.h(130) : 参见“atof”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(114): warning C4150: 删除指向不完整“FileHeader”类型的指针；没有调用析构函数
+                 e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(31) : 参见“FileHeader”的声明
+         scheduler.cpp
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(72): warning C4273: “atoi”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdlib.h(405) : 参见“atoi”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(73): warning C4273: “atof”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\math.h(130) : 参见“atof”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(114): warning C4150: 删除指向不完整“FileHeader”类型的指针；没有调用析构函数
+                 e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(31) : 参见“FileHeader”的声明
+         openfile.cpp
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(72): warning C4273: “atoi”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdlib.h(405) : 参见“atoi”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(73): warning C4273: “atof”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\math.h(130) : 参见“atof”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(114): warning C4150: 删除指向不完整“FileHeader”类型的指针；没有调用析构函数
+                 e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(31) : 参见“FileHeader”的声明
+         filesys.cpp
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(72): warning C4273: “atoi”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdlib.h(405) : 参见“atoi”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(73): warning C4273: “atof”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\math.h(130) : 参见“atof”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(114): warning C4150: 删除指向不完整“FileHeader”类型的指针；没有调用析构函数
+                 e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(31) : 参见“FileHeader”的声明
+         filehdr.cpp
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(72): warning C4273: “atoi”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdlib.h(405) : 参见“atoi”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(73): warning C4273: “atof”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\math.h(130) : 参见“atof”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(114): warning C4150: 删除指向不完整“FileHeader”类型的指针；没有调用析构函数
+                 e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(31) : 参见“FileHeader”的声明
          exception.cpp
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(72): warning C4273: “atoi”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdlib.h(405) : 参见“atoi”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(73): warning C4273: “atof”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\math.h(130) : 参见“atof”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(114): warning C4150: 删除指向不完整“FileHeader”类型的指针；没有调用析构函数
+                 e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(31) : 参见“FileHeader”的声明
+     1>e:\github\custom--nachos\nachosdll\nachosdll\ksyscall.h(445): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdio.h(363) : 参见“_snprintf”的声明
+         addrspace.cpp
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(72): warning C4273: “atoi”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\stdlib.h(405) : 参见“atoi”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\sysdep.h(73): warning C4273: “atof”: dll 链接不一致
+                 D:\Microsoft Visual Studio 10.0\VC\include\math.h(130) : 参见“atof”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\utility.h(45): warning C4005: “TRUE”: 宏重定义
+                 C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\windef.h(72) : 参见“TRUE”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\utility.h(46): warning C4005: “FALSE”: 宏重定义
+                 C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\windef.h(68) : 参见“FALSE”的前一个定义
+     1>e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(114): warning C4150: 删除指向不完整“FileHeader”类型的指针；没有调用析构函数
+                 e:\github\custom--nachos\nachosdll\nachosdll\openfile.h(31) : 参见“FileHeader”的声明
+         正在生成代码...
+     1>e:\github\custom--nachos\nachosdll\nachosdll\thread.cpp(72): warning C4731: “SWITCH”: 框架指针寄存器“ebp”被内联程序集代码修改
+     1>e:\github\custom--nachos\nachosdll\nachosdll\thread.cpp(104): warning C4731: “SWITCH”: 框架指针寄存器“ebp”被内联程序集代码修改
        Link:
-         D:\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VisualStudio 2010\AcmProjects\NachOsDll\Debug\NachOsDll.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\NachOsDll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\VisualStudio 2010\AcmProjects\NachOsDll\Debug\NachOsDll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VisualStudio 2010\AcmProjects\NachOsDll\Debug\NachOsDll.lib" /MACHINE:X86 /DLL Debug\addrspace.obj
+         D:\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Github\Custom--NachOS\NachOsDll\Debug\NachOsDll.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\NachOsDll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Github\Custom--NachOS\NachOsDll\Debug\NachOsDll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Github\Custom--NachOS\NachOsDll\Debug\NachOsDll.lib" /MACHINE:X86 /DLL Debug\addrspace.obj
          Debug\alarm.obj
          Debug\bitmap.obj
          Debug\debug.obj
@@ -32,14 +111,15 @@
          Debug\table.obj
          Debug\thread.obj
          Debug\translate.obj
-         NachOsDll.vcxproj -> D:\VisualStudio 2010\AcmProjects\NachOsDll\Debug\NachOsDll.dll
+            正在创建库 E:\Github\Custom--NachOS\NachOsDll\Debug\NachOsDll.lib 和对象 E:\Github\Custom--NachOS\NachOsDll\Debug\NachOsDll.exp
+         NachOsDll.vcxproj -> E:\Github\Custom--NachOS\NachOsDll\Debug\NachOsDll.dll
        Manifest:
-         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"D:\VisualStudio 2010\AcmProjects\NachOsDll\Debug\NachOsDll.dll.manifest" /manifest Debug\NachOsDll.dll.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"E:\Github\Custom--NachOS\NachOsDll\Debug\NachOsDll.dll.manifest" /manifest Debug\NachOsDll.dll.intermediate.manifest
        FinalizeBuildStatus:
          正在删除文件“Debug\NachOsDll.unsuccessfulbuild”。
          正在对“Debug\NachOsDll.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“D:\VisualStudio 2010\AcmProjects\NachOsDll\NachOsDll\NachOsDll.vcxproj”(build 个目标)的操作。
+     1>已完成生成项目“E:\Github\Custom--NachOS\NachOsDll\NachOsDll\NachOsDll.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.95
+已用时间 00:00:24.19

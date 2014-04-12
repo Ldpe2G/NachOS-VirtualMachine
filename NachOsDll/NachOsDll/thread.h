@@ -174,7 +174,7 @@ public:
     virtual void setStatus(ThreadStatus st) = 0;// { status = st; }
     virtual char* getName() = 0;	// { return (name); }
     virtual void Print() = 0;		//{ std::cout << name; }
-    virtual void SelfTest() = 0;		// test whether thread impl is working
+    virtual void SelfTest(int threadNum) = 0;		// test whether thread impl is working
 
 protected:
     // some of the private data for this class is listed above

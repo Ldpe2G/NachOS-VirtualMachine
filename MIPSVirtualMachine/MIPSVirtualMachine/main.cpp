@@ -348,7 +348,7 @@ Cleanup(int x)
 static const int TransferSize = 128;
 
 
-#ifndef FILESYS_STUB
+//#ifndef FILESYS_STUB	/* Liang DePeng - */
 //----------------------------------------------------------------------
 // Copy
 //      Copy the contents of the UNIX file "from" to the Nachos file "to"
@@ -396,7 +396,7 @@ static void Copy(char *from, char *to)
     (* fp_Close)(fd);
 }
 
-#endif // FILESYS_STUB */
+//#endif // FILESYS_STUB */	/* Liang DePeng - */
 
 //----------------------------------------------------------------------
 // Print
@@ -453,16 +453,17 @@ int main(int argc, char **argv)
     char *debugArg = "";
     char *userProgName = NULL;        // default is not to execute a user prog
     bool threadTestFlag = false;
+	int threadNum = 0;
     bool consoleTestFlag = false;
     bool networkTestFlag = false;
-//#ifndef FILESYS_STUB
+//#ifndef FILESYS_STUB	/* Liang DePeng - */
     char *copyUnixFileName = NULL;    // UNIX file to be copied into Nachos
     char *copyNachosFileName = NULL;  // name of copied file in Nachos
     char *printFileName = NULL; 
     char *removeFileName = NULL;
     bool dirListFlag = false;
     bool dumpFlag = false;
-//#endif //FILESYS_STUB
+//#endif //FILESYS_STUB	/* Liang DePeng - */
 
 	//argc = 5;
 	//argv[0] = "NachOS";
@@ -541,6 +542,9 @@ int main(int argc, char **argv)
 			i++;
 		}
 		else if (strcmp(argv[i], "-K") == 0) {
+			ASSERT(i + 1 < argc);   // next argument is thread number	/* Liang DePeng + */
+				threadNum = atoi(argv[i + 1]);							/* Liang DePeng + */
+			i++;														/* Liang DePeng + */
 			threadTestFlag = TRUE;
 		}
 		else if (strcmp(argv[i], "-C") == 0) {
@@ -549,7 +553,7 @@ int main(int argc, char **argv)
 		else if (strcmp(argv[i], "-N") == 0) {
 			networkTestFlag = TRUE;
 		}
-//#ifndef FILESYS_STUB
+//#ifndef FILESYS_STUB	/* Liang DePeng - */
 		else if (strcmp(argv[i], "-cp") == 0) {
 			ASSERT(i + 2 < argc);
 			copyUnixFileName = argv[i + 1];
@@ -572,16 +576,16 @@ int main(int argc, char **argv)
 		else if (strcmp(argv[i], "-D") == 0) {
 			dumpFlag = true;
 		}
-//#endif //FILESYS_STUB
+//#endif //FILESYS_STUB	/* Liang DePeng - */
 		else if (strcmp(argv[i], "-u") == 0) {
             std::cout << "Partial usage: nachos [-z -d debugFlags]\n";
             std::cout << "Partial usage: nachos [-x programName]\n";
 			std::cout << "Partial usage: nachos [-K] [-C] [-N]\n";
-//#ifndef FILESYS_STUB
+//#ifndef FILESYS_STUB	/* Liang DePeng - */
             std::cout << "Partial usage: nachos [-cp UnixFile NachosFile]\n";
             std::cout << "Partial usage: nachos [-p fileName] [-r fileName]\n";
             std::cout << "Partial usage: nachos [-l] [-D]\n";
-//#endif //FILESYS_STUB
+//#endif //FILESYS_STUB	/* Liang DePeng - */
 		}
 
     }
@@ -686,18 +690,19 @@ int main(int argc, char **argv)
 		// run some tests, if requested
 		
 		if (threadTestFlag) {
-		  kernel->ThreadSelfTest();  // test threads and synchronization
+			
+			kernel->ThreadSelfTest(threadNum);  // test threads and synchronization
 		}
 		if (consoleTestFlag) {
-		  kernel->ConsoleTest();   // interactive test of the synchronized console
+			kernel->ConsoleTest();   // interactive test of the synchronized console
 		}
-		/*if (networkTestFlag) {
-		  kernel->NetworkTest();   // two-machine test of the network
-		}*/
+		//if (networkTestFlag) {	/* Liang DePeng - */
+		//  kernel->NetworkTest();   // two-machine test of the network	
+		//}							/* Liang DePeng - */
 
 	//#ifndef FILESYS_STUB
 		if (removeFileName != NULL) {
-		  kernel->fileSystem->Remove(removeFileName);
+			kernel->fileSystem->Remove(removeFileName);
 		}
 		if (copyUnixFileName != NULL && copyNachosFileName != NULL) {
 		  
